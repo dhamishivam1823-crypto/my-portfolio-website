@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive portfolio website demonstration project.">
+  <title>EzzY work | Creative Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+</body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="EzzY work home">AM<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#work">Projects</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">PORTFOLIO / WEB DEVELOPMENT</p>
+        <h1>Building clear, useful<br><span>digital experiences.</span></h1>
+        <p class="intro">A simple, responsive portfolio website demonstrating modern HTML, CSS and JavaScript fundamentals.</p>
+        <a class="button" href="#work">Explore projects <span>↗</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orb"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-label">DESIGN<br>×<br>CODE</div></div>
+    </section>
+
+    <section class="section about" id="about">
+      <div><p class="eyebrow">01 / ABOUT</p><h2>Thoughtful design.<br>Reliable code.</h2></div>
+      <p class="body-copy">This demonstration portfolio showcases a clean page structure, reusable styling, responsive layouts, interactive navigation and basic form validation. It is designed as a learning project that can be customized with real student details and work.</p>
+    </section>
+
+    <section class="section work" id="work">
+      <div class="section-heading"><div><p class="eyebrow">02 / SELECTED WORK</p><h2>Project highlights</h2></div><p class="muted">Sample cards for layout and UI practice</p></div>
+      <div class="project-grid">
+        <article class="project-card"><div class="project-visual visual-one"><span>01</span></div><h3>Landing page</h3><p>Structured sections and clear calls to action.</p></article>
+        <article class="project-card"><div class="project-visual visual-two"><span>02</span></div><h3>Responsive layout</h3><p>Flexible components for desktop and mobile.</p></article>
+        <article class="project-card"><div class="project-visual visual-three"><span>03</span></div><h3>Contact experience</h3><p>Accessible form fields with client-side checks.</p></article>
+      </div>
+    </section>
+
+    <section class="section skills">
+      <p class="eyebrow">03 / TOOLKIT</p><h2>Core technologies</h2>
+      <div class="skill-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive design</span><span>Manual testing</span><span>Browser testing</span></div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div><p class="eyebrow">04 / GET IN TOUCH</p><h2>Have a project<br>in mind?</h2><p class="muted">Use this sample form to test required fields and validation feedback.</p></div>
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" required>
+        <label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" required>
+        <label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Write a short message" required></textarea>
+        <button class="button" type="submit">Send message <span>↗</span></button>
+        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#home">AM<span>.</span></a><p>Demonstration project · HTML / CSS / JavaScript</p><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
